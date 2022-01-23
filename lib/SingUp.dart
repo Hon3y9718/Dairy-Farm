@@ -14,7 +14,6 @@ class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green,
       appBar: AppBar(
         title: Text("Dairy Management"),
       ),
@@ -27,7 +26,7 @@ class _SignUpState extends State<SignUp> {
             const Padding(
               padding: const EdgeInsets.only(left: 10.0, bottom: 4.0),
               child: Text(
-                'Login',
+                'Sign Up',
                 style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
               ),
             ),
@@ -36,33 +35,46 @@ class _SignUpState extends State<SignUp> {
               child: TextField(
                 controller: signupController.usernamecontroller,
                 decoration: InputDecoration(
+                    label: Text('Name'),
                     border: OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.red))),
               ),
+            ),
+            SizedBox(
+              height: 30,
             ),
             SizedBox(
               width: 400,
               child: TextField(
                 controller: signupController.emailcontroller,
                 decoration: InputDecoration(
+                    label: Text('Email'),
                     border: OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.red))),
               ),
+            ),
+            SizedBox(
+              height: 30,
             ),
             SizedBox(
               width: 400,
               child: TextField(
                 controller: signupController.passwordcontroller,
                 decoration: InputDecoration(
+                    label: Text('User Name'),
                     border: OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.red))),
               ),
+            ),
+            SizedBox(
+              height: 30,
             ),
             SizedBox(
               width: 400,
               child: TextField(
                 controller: signupController.passwordconfirmcontroller,
                 decoration: InputDecoration(
+                    label: Text('Password'),
                     border: OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.red))),
               ),

@@ -1,4 +1,3 @@
-
 import 'package:dairyfarm/controllers/LoginController.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -18,7 +17,7 @@ class LoginScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 10.0, bottom: 4.0),
+              padding: const EdgeInsets.only(left: 10.0, bottom: 25.0),
               child: Text(
                 'Login',
                 style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
@@ -34,6 +33,7 @@ class LoginScreen extends StatelessWidget {
                         borderSide: BorderSide(color: Colors.red))),
               ),
             ),
+            SizedBox(height: 20),
             SizedBox(
               width: 400,
               child: TextField(
