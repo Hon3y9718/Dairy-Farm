@@ -1,3 +1,4 @@
+import 'package:dairyfarm/SingUp.dart';
 import 'package:dairyfarm/controllers/LoginController.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -10,14 +11,14 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      body: SizedBox(
         height: Get.height,
         width: Get.width,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 10.0, bottom: 25.0),
+            const Padding(
+              padding: EdgeInsets.only(left: 10.0, bottom: 25.0),
               child: Text(
                 'Login',
                 style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
@@ -27,24 +28,25 @@ class LoginScreen extends StatelessWidget {
               width: 400,
               child: TextField(
                 controller: loginController.usernamecontroller,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                     label: Text('User Name'),
                     border: OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.red))),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             SizedBox(
               width: 400,
               child: TextField(
                 controller: loginController.passwordcontroller,
-                decoration: InputDecoration(
+                obscureText: true,
+                decoration: const InputDecoration(
                     label: Text('Password'),
                     border: OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.red))),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             InkWell(
@@ -57,11 +59,29 @@ class LoginScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(5),
                   color: Colors.purple,
                 ),
-                child: Text(
+                child: const Text(
                   "Login",
                   style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
               ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text("Don't have an Account? "),
+                GestureDetector(
+                  onTap: () {
+                    Get.to(const SignUp());
+                  },
+                  child: const Text(
+                    'Sign Up!',
+                    style: TextStyle(color: Colors.blue),
+                  ),
+                )
+              ],
             )
           ],
         ),

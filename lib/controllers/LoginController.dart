@@ -6,9 +6,17 @@ class LoginController extends GetxController {
   TextEditingController usernamecontroller = TextEditingController();
   TextEditingController passwordcontroller = TextEditingController();
 
+  var username = "anything";
+  var password = "anypassword";
+
+  
+
   login() {
-    print('Login Done!');
-    Get.to(SignUp());
-    //TODO: Complete login function
+    if (usernamecontroller.text == username &&
+        passwordcontroller.text == password) {
+      print('Login Sucsessful');
+    } else {
+      print('Wrong Usrname or Password');
+    }
   }
 }
