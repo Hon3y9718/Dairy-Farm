@@ -33,14 +33,14 @@ class _SignUpState extends State<SignUp> {
             SizedBox(
               width: 400,
               child: TextField(
-                controller: signupController.namecontroller,
-                decoration: InputDecoration(
+                controller: signupController.usernamecontroller,
+                decoration: const InputDecoration(
                     label: Text('Name'),
                     border: OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.red))),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             SizedBox(

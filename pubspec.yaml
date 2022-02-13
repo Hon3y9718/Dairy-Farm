@@ -39,10 +39,16 @@ dependencies:
   cupertino_icons: ^1.0.2
 
   get:
+  hive: ^2.0.5
+  hive_flutter:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 88b00b69753b40b7785ea92d1e8a682b0699b25a
   hive_generator:
   build_runner:
 

@@ -7,13 +7,16 @@ class SignUpController extends GetxController {
   TextEditingController emailcontroller = TextEditingController();
   TextEditingController namecontroller = TextEditingController();
 
- 
   var users = [];
 
-//   SignUp() {
-//     var users = {
-//       "username": username
-//     }
-//   }
-// }
+  SignUp() {
+    var user = {
+      "username": usernamecontroller.text,
+      "email": emailcontroller.text,
+      "password": passwordcontroller.text
+    };
+    users.add(user);
+
+    print(users);
+  }
 }
