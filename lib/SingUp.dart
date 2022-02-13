@@ -33,7 +33,7 @@ class _SignUpState extends State<SignUp> {
             SizedBox(
               width: 400,
               child: TextField(
-                controller: signupController.usernamecontroller,
+                controller: signupController.namecontroller,
                 decoration: InputDecoration(
                     label: Text('Name'),
                     border: OutlineInputBorder(
@@ -59,7 +59,7 @@ class _SignUpState extends State<SignUp> {
             SizedBox(
               width: 400,
               child: TextField(
-                controller: signupController.passwordcontroller,
+                controller: signupController.usernamecontroller,
                 decoration: InputDecoration(
                     label: Text('User Name'),
                     border: OutlineInputBorder(
@@ -72,7 +72,8 @@ class _SignUpState extends State<SignUp> {
             SizedBox(
               width: 400,
               child: TextField(
-                controller: signupController.passwordconfirmcontroller,
+                controller: signupController.passwordcontroller,
+                obscureText: true,
                 decoration: InputDecoration(
                     label: Text('Password'),
                     border: OutlineInputBorder(
@@ -83,7 +84,7 @@ class _SignUpState extends State<SignUp> {
               height: 30,
             ),
             InkWell(
-              onTap: signupController.SignUp,
+              // onTap: signupController.SignUp,
               child: Container(
                 height: 50,
                 width: 400,

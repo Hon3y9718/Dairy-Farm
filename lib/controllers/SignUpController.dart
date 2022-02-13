@@ -5,10 +5,15 @@ class SignUpController extends GetxController {
   TextEditingController usernamecontroller = TextEditingController();
   TextEditingController passwordcontroller = TextEditingController();
   TextEditingController emailcontroller = TextEditingController();
-  TextEditingController passwordconfirmcontroller = TextEditingController();
+  TextEditingController namecontroller = TextEditingController();
 
-  SignUp() {
-    print('Sign Up Done!');
-    //TODO: Complete login function
-  }
+ 
+  var users = [];
+
+//   SignUp() {
+//     var users = {
+//       "username": username
+//     }
+//   }
+// }
 }
