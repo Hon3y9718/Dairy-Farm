@@ -19,13 +19,8 @@ class LoginScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-<<<<<<< HEAD
-            Padding(
-              padding:  EdgeInsets.only(left: 10.0, bottom: 25.0),
-=======
             const Padding(
               padding: EdgeInsets.only(left: 10.0, bottom: 25.0),
->>>>>>> 88b00b69753b40b7785ea92d1e8a682b0699b25a
               child: Text(
                 'Login',
                 style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
@@ -72,22 +67,6 @@ class LoginScreen extends StatelessWidget {
                 ),
               ),
             ),
-<<<<<<< HEAD
-
-            const SizedBox(height: 20,),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Text ("Don't have an account? "),
-                GestureDetector(
-                  onTap: (){
-                    Get.to(const SignUp());
-                  },
-                  child: const Text("Sign Up",
-                  style: TextStyle(color: Colors.blue),),
-                ),
-
-=======
             const SizedBox(
               height: 20,
             ),
@@ -104,7 +83,6 @@ class LoginScreen extends StatelessWidget {
                     style: TextStyle(color: Colors.blue),
                   ),
                 )
->>>>>>> 88b00b69753b40b7785ea92d1e8a682b0699b25a
               ],
             )
           ],
