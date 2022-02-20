@@ -15,7 +15,7 @@ class _SignUpState extends State<SignUp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Dairy Management"),
+        title: const Text("Dairy Management"),
       ),
       body: Container(
         height: Get.height,
@@ -47,26 +47,40 @@ class _SignUpState extends State<SignUp> {
               width: 400,
               child: TextField(
                 controller: signupController.emailcontroller,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                     label: Text('Email'),
                     border: OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.red))),
               ),
             ),
+            const SizedBox(
+              height: 30,
+            ),
             SizedBox(
+              width: 400,
+              child: TextField(
+                controller: signupController.genderController,
+                obscureText: true,
+                decoration: const InputDecoration(
+                    label: Text('Gender'),
+                    border: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.red))),
+              ),
+            ),
+            const SizedBox(
               height: 30,
             ),
             SizedBox(
               width: 400,
               child: TextField(
                 controller: signupController.usernamecontroller,
-                decoration: InputDecoration(
-                    label: Text('User Name'),
-                    border: OutlineInputBorder(
+                decoration: const InputDecoration(
+                    label: const Text('User Name'),
+                    border: const OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.red))),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             SizedBox(
@@ -74,13 +88,13 @@ class _SignUpState extends State<SignUp> {
               child: TextField(
                 controller: signupController.passwordcontroller,
                 obscureText: true,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                     label: Text('Password'),
-                    border: OutlineInputBorder(
+                    border: const OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.red))),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             InkWell(
@@ -93,7 +107,7 @@ class _SignUpState extends State<SignUp> {
                   borderRadius: BorderRadius.circular(5),
                   color: Colors.purple,
                 ),
-                child: Text(
+                child: const Text(
                   "Sign Up",
                   style: TextStyle(fontSize: 20, color: Colors.white),
                 ),

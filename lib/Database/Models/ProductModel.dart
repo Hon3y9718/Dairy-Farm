@@ -1,7 +1,9 @@
 import 'package:hive/hive.dart';
 
+part 'ProductModel.g.dart';
+
 @HiveType(typeId: 0)
-class UsersModel extends HiveObject {
+class ProductModel extends HiveObject {
   @HiveField(0)
   String name;
 
@@ -11,10 +13,12 @@ class UsersModel extends HiveObject {
   @HiveField(2)
   String type;
 
- 
+  @HiveField(3)
+  String quantity;
 
-  UsersModel(
+  ProductModel(
       {required this.name,
       required this.type,
-      required this.time,});
+      required this.time,
+      required this.quantity});
 }
