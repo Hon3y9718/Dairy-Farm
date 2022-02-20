@@ -59,7 +59,7 @@ class _SignUpState extends State<SignUp> {
             SizedBox(
               width: 400,
               child: TextField(
-                controller: signupController.genderController,
+                controller: signupController.gendercontroller,
                 obscureText: true,
                 decoration: const InputDecoration(
                     label: Text('Gender'),
@@ -68,6 +68,62 @@ class _SignUpState extends State<SignUp> {
               ),
             ),
             const SizedBox(
+              height: 30,
+            ),
+            SizedBox(
+              width: 400,
+              child: TextField(
+                controller: signupController.gendercontroller,
+                obscureText: true,
+                decoration: InputDecoration(
+                    label: Text('Gender'),
+                    border: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.red))),
+              ),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            SizedBox(
+              width: 400,
+              child: TextField(
+                controller: signupController.phonenumbercontroller,
+                obscureText: true,
+                decoration: InputDecoration(
+                    label: Text('Number'),
+                    border: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.red))),
+              ),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            SizedBox(
+              width: 400,
+              child: TextField(
+                controller: signupController.positioncontroller,
+                obscureText: true,
+                decoration: InputDecoration(
+                    label: Text('Position'),
+                    border: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.red))),
+              ),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            SizedBox(
+              width: 400,
+              child: TextField(
+                controller: signupController.dobcontroller,
+                obscureText: true,
+                decoration: InputDecoration(
+                    label: Text('Date of Birth'),
+                    border: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.red))),
+              ),
+            ),
+            SizedBox(
               height: 30,
             ),
             SizedBox(

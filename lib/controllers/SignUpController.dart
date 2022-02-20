@@ -6,7 +6,10 @@ class SignUpController extends GetxController {
   TextEditingController passwordcontroller = TextEditingController();
   TextEditingController emailcontroller = TextEditingController();
   TextEditingController namecontroller = TextEditingController();
-  TextEditingController genderController = TextEditingController();
+  TextEditingController gendercontroller = TextEditingController();
+  TextEditingController positioncontroller = TextEditingController();
+  TextEditingController phonenumbercontroller = TextEditingController();
+  TextEditingController dobcontroller = TextEditingController();
 
   var users = [];
 
